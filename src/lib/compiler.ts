@@ -214,7 +214,7 @@ ${asciiTree}
     sections.push(`## 3. Scoped UI Component Rules & External Tool Pointers
 
 - **UI Component Scoped Rules**: Before modifying or creating components in \`${options.useSrcDir ? 'src/' : ''}components/\`, agents MUST obey the scoped rules in [\`${componentAgentsPath}\`](./${componentAgentsPath}).
-- **Design Rules Contract**: Agents must verify that \`./.hallmark/RULES.md\` exists before generating UI code. If missing, follow the bootstrap instructions in [\`SETUP.md\`](./SETUP.md).`);
+- **Design Skill Contract**: Agents must verify that the \`hallmark\` skill is installed and available before generating UI code. If missing, follow the bootstrap instructions in [\`SETUP.md\`](./SETUP.md).`);
   }
 
   return sections.join('\n\n---\n\n') + '\n';

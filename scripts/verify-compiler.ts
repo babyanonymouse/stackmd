@@ -108,10 +108,18 @@ assert.strictEqual(
   HALLMARK_PINUI_POINTER.setupInstructions,
   'SETUP.md matches pointer setup instructions'
 );
+assert.ok(
+  pointerSrcBundle['SETUP.md'].includes('pnpm dlx skills add nutlope/hallmark -g'),
+  'SETUP.md contains actual skills CLI command'
+);
 assert.strictEqual(
   pointerSrcBundle['src/components/AGENTS.md'],
   HALLMARK_PINUI_POINTER.scopedAgentRule,
   'src/components/AGENTS.md matches pointer scoped rule'
+);
+assert.ok(
+  pointerSrcBundle['src/components/AGENTS.md'].includes('`hallmark` skill'),
+  'Scoped rule references hallmark skill'
 );
 assert.strictEqual(
   pointerSrcBundle['components/AGENTS.md'],
