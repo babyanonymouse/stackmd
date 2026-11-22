@@ -12,10 +12,10 @@ import {
   TAILWIND_V4_UI,
   PRISMA_POSTGRES,
   MONGOOSE_MONGODB,
-} from '../registry/base';
-import { NEXTJS_PRISMA, NEXTJS_MONGOOSE } from '../registry/intersections';
-import { HALLMARK_PINUI_POINTER } from '../registry/pointers';
-import { getRegistryItem } from './registry-manifest';
+} from '../registry/base.ts';
+import { NEXTJS_PRISMA, NEXTJS_MONGOOSE } from '../registry/intersections.ts';
+import { HALLMARK_PINUI_POINTER } from '../registry/pointers.ts';
+import { getRegistryItem } from './registry-manifest.ts';
 import JSZip from 'jszip';
 
 export interface CompilerOptions {
